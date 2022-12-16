@@ -1,6 +1,10 @@
 from django.urls import path, include, re_path
 from . import views
 
+'''for the app namesd polls add user authentication,
+should they pass authentication the next path must be index,
+where registration will take place.'''
+
 app_name = 'polls'
 urlpatterns = [
     path('', views.user_login, name='login'),
